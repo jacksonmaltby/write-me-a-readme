@@ -31,15 +31,18 @@ This project is licensed under the ${license} license.`;
 function generateMarkdown(data) {
   return `# ${data.title}
 
-${renderLicenseBadge(data.license)}
-
 ## Description 
   
 ${data.description}
   
 ## Table of Contents 
   
-${renderLicenseLink(data.license)}
+* Installation
+* Usage
+* License
+* Contributing
+* Tests
+* Questions
   
 ## Installation
   
@@ -48,6 +51,11 @@ ${data.installation}
 ## Usage 
   
 ${data.usage}
+
+## License
+
+${renderLicenseLink(data.license)}
+${renderLicenseBadge(data.license)}
   
 ## Contributing
   
