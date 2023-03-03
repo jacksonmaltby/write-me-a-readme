@@ -11,7 +11,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license) {
-    return `\n* [License](#license)\n`;
+    return `\n[License](License)\n`;
   }
   return '';
 }
@@ -52,8 +52,7 @@ ${data.installation}
   
 ${data.usage}
 
-## License
-
+${renderLicenseSection(data.license)}
 ${renderLicenseLink(data.license)}
 ${renderLicenseBadge(data.license)}
   
@@ -64,8 +63,6 @@ ${data.contributing}
 ## Tests
   
 ${data.tests}
-  
-${renderLicenseSection(data.license)}
   
 ## Questions
   
